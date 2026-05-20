@@ -81,12 +81,19 @@ nav a:hover{
     transform: translateY(-10px);
     transition: 0.5s;
 }
+#temporadas {
 
+}
 .temporada{
     display: inline-block;
-    width: 250px;
     margin: 15px;
-    padding: 10px;
+    padding: 12px;
     background-color: rgb(166, 137, 83);
-    border-radius: 10px
+    border-radius: 10px;
+}
+.temporada img {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
 }

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: antiquewhite;
+}
+#personagem{
+   background-color: aqua;
+    
+
+}
+#personagem h2{
+    
+}
+.container-personagens{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: stretch;
+   gap: 30px;
+    
+}
+.item {
+    width: 250px;
+    background-color:  rgb(166, 137, 83);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
