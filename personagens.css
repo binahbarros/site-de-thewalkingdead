@@ -1,22 +1,27 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&family=Bree+Serif&family=Cherry+Bomb+One&family=Kablammo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
 body {
-    background-color: antiquewhite;
+    background-color: rgb(124, 129,98);;
 }
 #personagem{
-   background-color: aqua;
-    
-
+    background-color: rgb(124, 129,98);
 }
 #personagem h2{
-    
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(42, 53, 44);
 }
 .container-personagens{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap; /* permite quebrar a linha */
    justify-content: center;
    align-items: stretch;
    gap: 30px;
@@ -27,6 +32,110 @@ body {
     background-color:  rgb(166, 137, 83);
     border-radius: 10px;
     padding: 20px;
+    display: flex; /* ativar o flexbox */
+    flex-direction: column; /* muda a direção dos eixos e deixa em coluna */
+    justify-content: space-between;
+    
+}
+
+.item img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+/* ESTOU ALTERANDO O ESTILO DO PARAGRAFO*/
+.item p{
+    color: rgb(178, 162, 142);
+    font-weight: bold; /* altera a espessura da fonte */
+    margin-bottom: 10px;
+}
+.item h3{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 15px;
+
+}
+.item:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.tags {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+.tag {
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-flex;
+
+}
+.sobrevivente {
+    background-color: rgb(29, 131, 234);
+    
+}
+.lider {
+    background-color: goldenrod;
+}
+.destemida {
+    background-color: rgb(245, 167, 71);
+}
+.determinada {
+    background-color: green;
+}
+.gentil {
+    background-color: darkcyan;
+}
+.sabio {
+    background-color: blueviolet;
+}
+.explorador {
+    background-color: brown;
+}
+.cuidadora {
+    background-color: coral;
+}
+.doce {
+    background-color: rgb(233, 88, 112);
+}
+.intensa {
+    background-color: rgb(112, 15, 63);
+}
+.atiradora {
+    background-color: rgb(97, 55, 20);
+}
+.valente {
+    background-color: rgb(100, 205, 170);
+}
+.conselheiro {
+    background-color: darkslategrey;
+}
+.protetor {
+    background-color: orangered;
+}
+footer{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    transition: 0.3s, box-shadow 0.3s;
+}
+footer:hover{
+    color: black;
+    box-shadow: 0 0 50px 20px lemonchiffon;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 600px){
+    #personagem h2{
+        font-size: 50px;
+    }
 }

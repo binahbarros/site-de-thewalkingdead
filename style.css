@@ -11,33 +11,33 @@
 /* mudar as caracteristicas de todo o meu conteudo do body */
 body {
     text-align: center;
-    background-color: rgb(124, 129,98);
+    background-color: rgb(124, 129, 98);
 }
 
 
 header {
     background-color: rgb(51, 53, 42);
     font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 nav a {
-     color: white;
-     text-decoration: none;
-     /* tira o sublinhado do texto */
-     display: inline-block;
-     /* ativar o display */
-     margin: 10px;
-     /* aumentar o espaçamento */
-     padding: 10px 20px;
-     background-color: rgb(51, 53, 42);
-     border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    /* tira o sublinhado do texto */
+    display: inline-block;
+    /* ativar o display */
+    margin: 10px;
+    /* aumentar o espaçamento */
+    padding: 10px 20px;
+    background-color: rgb(51, 53, 42);
+    border-radius: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(73, 76, 59);
 }
 
@@ -47,16 +47,16 @@ nav a:hover{
     margin: 15px;
     padding: 10px;
     background-color: rgb(166, 137, 83);
-    border-radius: 10px
-    ;
+    border-radius: 10px;
 }
+
 .card img {
     width: 100%;
     height: 250px;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-#personagens h2{
+#personagens h2 {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -64,14 +64,14 @@ nav a:hover{
     color: rgb(42, 53, 44);
 }
 
-#personagens{
+#personagens {
     background-image: url(./imagens/3banner.jpg);
     /*background-size: mexe no tamanho do plano de fundo/imagem | cover = esticar a imagem | contain = mantem o tamanho original | background-repeat: tira a repetição ou coloca */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#personagens p{
+#personagens p {
     font-family: "BJCree", serif;
     font-weight: 400;
     font-style: normal;
@@ -81,19 +81,32 @@ nav a:hover{
     transform: translateY(-10px);
     transition: 0.5s;
 }
-#temporadas {
 
+#temporadas {
+    display: inline-block;
+    margin: 15px;
+    padding: 12px;
+    background-image: url(./imagens/banner.jpg);
+    border-radius: 10px;
+    
+    
 }
-.temporada{
+
+.temporada {
     display: inline-block;
     margin: 15px;
     padding: 12px;
     background-color: rgb(166, 137, 83);
     border-radius: 10px;
 }
+
 .temporada img {
     display: flex;
     width: 500px;
     height: 300px;
     border-radius: 10px;
+}
+.temporada:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
